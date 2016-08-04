@@ -9,7 +9,7 @@
 import Foundation
 struct Weather {
     let dateAndTime:NSDate
-    let city:String
+    //let city:String
     let country:String
     let longitude:Double
     let latitude:Double
@@ -35,14 +35,14 @@ struct Weather {
     //Optional values ie values may be nil for no wind in wind values etc
     let windDirection: Double?
     let rainfallInLast3Hours: Double?
-    
+    //let weatherIconURL:NSURL
     let sunrise: NSDate
     let sunset: NSDate
     init(weatherData:[String:AnyObject]){
         
         //TODO:see if NSIntervalSince1970 works or this following timeIntervalSinceREferenceDate
         dateAndTime=NSDate(timeIntervalSinceReferenceDate: weatherData["dt"] as! NSTimeInterval)
-        city=weatherData["Name"] as! String
+        //city=weatherData["Name"] as! String
         let coordDict = weatherData["coord"] as! [String:AnyObject]
         longitude=coordDict["lon"] as! Double
         latitude=coordDict["lat"] as! Double
@@ -52,6 +52,7 @@ struct Weather {
         mainWeather=weatherDict["main"] as! String
         weatherDescription=weatherDict["description"] as! String
         weatherIconID=weatherDict["icon"] as! String
+        /*weatherIconURL=NSURL(fileURLWithPath: "http://openweathermap.org/img/w/\(weatherIconID).png")*/
         
         let mainDict = weatherData["main"] as! [String: AnyObject]
         temp = mainDict["temp"] as! Double
