@@ -9,7 +9,7 @@
 import Foundation
 struct Weather {
     let dateAndTime:NSDate
-    let city:String
+    //let city:String
     let country:String
     let longitude:Double
     let latitude:Double
@@ -42,7 +42,7 @@ struct Weather {
         
         //TODO:see if NSIntervalSince1970 works or this following timeIntervalSinceREferenceDate
         dateAndTime=NSDate(timeIntervalSinceReferenceDate: weatherData["dt"] as! NSTimeInterval)
-        city=weatherData["Name"] as! String
+        //city=weatherData["Name"] as! String
         let coordDict = weatherData["coord"] as! [String:AnyObject]
         longitude=coordDict["lon"] as! Double
         latitude=coordDict["lat"] as! Double
