@@ -40,6 +40,7 @@ class ViewController: UIViewController,weatherGetterDelegate,UITextFieldDelegate
         cityTextField.delegate = self
         cityTextField.enablesReturnKeyAutomatically = true
         getCityWeatherButton.enabled = true
+        textFieldShouldReturn(cityTextField)
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +52,12 @@ class ViewController: UIViewController,weatherGetterDelegate,UITextFieldDelegate
         city = cityTextField.text!
         var weather = weatherGetter(delegate: self)
         weather.getWeatherByCity(city)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
     }
 
     func didGetWeather(weather: Weather) {

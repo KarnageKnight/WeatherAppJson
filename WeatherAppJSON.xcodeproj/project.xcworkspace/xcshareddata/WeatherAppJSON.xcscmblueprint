@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5BA0CE190999BDB4F6A0EC8CF4369BAB41152ADE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5BA0CE190999BDB4F6A0EC8CF4369BAB41152ADE" : 0,
+    "6950DD04FABA88DD2B98A1B0BE5AAB7B3F2C6B1B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "47449B9A-BE8C-43A4-A640-E375CCE5B5D1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5BA0CE190999BDB4F6A0EC8CF4369BAB41152ADE" : "WeatherAppJSON\/",
+    "6950DD04FABA88DD2B98A1B0BE5AAB7B3F2C6B1B" : "SidebarMenu\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WeatherAppJSON",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WeatherAppJSON.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:KarnageKnight\/WeatherAppJson",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5BA0CE190999BDB4F6A0EC8CF4369BAB41152ADE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:KarnageKnight\/laughGuruMarketingApp-iOS-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6950DD04FABA88DD2B98A1B0BE5AAB7B3F2C6B1B"
+    }
+  ]
+}
